@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Feedback from './Feedback';
 import Options from './Options';
 import Notification from './Notification';
-
+// testing
 const App = () => {
   const [feedback, setFeedback] = useState({
     good: 0,
@@ -18,7 +18,6 @@ const App = () => {
       [feedbackType]: prevFeedback[feedbackType] + 1
     }));
   };
-
   const resetFeedback = () => {
     setFeedback({
       good: 0,
